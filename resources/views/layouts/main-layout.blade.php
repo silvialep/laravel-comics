@@ -21,6 +21,8 @@
 
     @yield('second-section')
 
+    @include('partials/footer')
+
 
 </body>
 

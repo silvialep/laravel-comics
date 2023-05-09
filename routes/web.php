@@ -19,8 +19,10 @@ Route::get('/', function () {
 
     $comics = config('comics');
 
+    $socialicons = config('socialicons');
+
     // dd($menulinks);
     // dd($comics);
 
-    return view('home', compact('menulinks', 'comics'));
+    return view('home', compact('menulinks', 'comics', 'socialicons'));
 });

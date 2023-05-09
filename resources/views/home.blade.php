@@ -3,26 +3,31 @@
 
 @section('main-section')
 
-<div id="jumbotron">
+@include('partials/jumbotron')
 
-</div>
-
-<div id="main-section" class="container">
-    <div id="comics-tag">
-        <h3>Current Series</h3>
-    </div>
-
-    <div class="row">
-        @foreach($comics as $singleComic)
-
-        <div class="col-2">
-            <div class="image-container">
-                <img src="{{$singleComic['thumb'] }}" alt="">
-            </div>
-            <span>{{$singleComic['series']}}</span>
+<div id="main-container">
+    <div id="main-section" class="container">
+        <div id="comics-tag">
+            <h3>Current Series</h3>
         </div>
-        @endforeach
+    
+        <div class="row mb-2">
+            @foreach($comics as $singleComic)
+    
+            <div class="col-2 d-flex flex-column gap-2 mb-5">
+                <div class="image-container">
+                    <img src="{{$singleComic['thumb']}}" alt="comic cover">
+                </div>
+                <span class="comic-series pt-2">{{$singleComic['series']}}</span>
+            </div>
+            @endforeach
+    
+        </div>
 
+        <div id="main-button">
+            
+        </div>
+    
     </div>
 
 </div>
