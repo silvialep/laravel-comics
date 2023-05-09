@@ -19,6 +19,8 @@
 
     @yield('main-section')
 
+    @yield('second-section')
+
 
 </body>
 
