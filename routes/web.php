@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts/main-layout');
+
+    $menulinks = config('menulinks');
+
+    $comics = config('comics');
+
+    // dd($menulinks);
+    // dd($comics);
+
+    return view('home', compact('menulinks', 'comics'));
 });
