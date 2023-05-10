@@ -19,7 +19,7 @@
                     @endforeach --}}
                     @for($i = 0; $i < count($menulinks); $i++)
                     <li @if($i == 1)class="active"@endif>
-                        <a href="">{{$menulinks[$i]}}</a>
+                        <a href="#">{{$menulinks[$i]}}</a>
                     </li>
                     @endfor
 

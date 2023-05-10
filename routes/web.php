@@ -21,8 +21,10 @@ Route::get('/', function () {
 
     $socialicons = config('socialicons');
 
+    $footerlinks = config('footerlinks');
+
     // dd($menulinks);
     // dd($comics);
 
-    return view('home', compact('menulinks', 'comics', 'socialicons'));
+    return view('home', compact('menulinks', 'comics', 'socialicons', 'footerlinks'));
 });
