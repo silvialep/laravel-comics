@@ -191,6 +191,58 @@ a {
     color: white;
 }
 
+
+
+//pagina del singolo comic
+
+#single-comic-container {
+    width: 100%;
+
+    #blue-bar {
+        width: 100%;
+        height: 80px;
+        background-color: rgb(2, 130, 249);
+    }
+
+    #comic-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        height: 400px;
+        width: 100%;
+        padding: 30px 0;
+
+        #single-comic {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 10px;
+
+            h2 {
+                font-size: 1.7rem;
+                font-weight: bolder;
+                text-transform: uppercase;
+                color: rgb(0, 63, 94);
+            }
+        }
+    }
+
+    #description-container {
+        background-color: rgb(246, 246, 246);
+        height: 400px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+//footer
+
 footer {
     width: 100%;
     height: 500px;

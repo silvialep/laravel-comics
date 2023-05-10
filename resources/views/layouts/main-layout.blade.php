@@ -19,8 +19,6 @@
 
     @yield('main-section')
 
-    @yield('second-section')
-
     @include('partials/footer')
 
 
